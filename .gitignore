@@ -1,0 +1,35 @@
+# ===== Verilator 编译产物（体积大、可重建）=====
+obj_dir_*/
+obj_dir/
+*.o
+*.a
+*.so
+*.d
+*.vvp
+*.vcd
+*.fst
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ===== 本地备份 / 编辑临时文件 =====
+*.bak
+*.localbak
+*.sv_web_bak
+*.swp
+*~
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+
+# ===== 运行日志（保留最新结果报告，忽略历史刷屏）=====
+results/logs/*.log
+results/reports/test_report_20*.json
+results/reports/test_report_20*.md
+!results/reports/latest_results.json
+!results/reports/latest_report.md
